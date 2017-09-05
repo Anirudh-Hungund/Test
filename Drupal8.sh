@@ -24,6 +24,7 @@ yum-config-manager --enable remi-php71
 yum -y install php php-opcache -y
 yum install yum install gd gd-devel php-gd -y
 yum install php-mysql -y
+yum install php-xml -y
 wget http://www.openssl.org/source/openssl-1.0.0.tar.gz
 tar -xvzf openssl-1.0.0.tar.gz
 cd openssl-1.0.0
@@ -38,7 +39,7 @@ mv drupal-8.2.6 /var/www/html/drupal
 cd /var/www/html/drupal/sites/default/
 cp default.settings.php settings.php
 chown -R apache:apache /var/www/html/drupal/
-#chcon -R -t httpd_sys_content_rw_t /var/www/html/drupal/sites/
+chcon -R -t httpd_sys_content_rw_t /var/www/html/drupal/sites/
 dbusername="root"
 dbpass="B1o@dmin@ll0w"
 #echo "SET PASSWORD = PASSWORD('B1o@dmin@ll0w');" mysql -u $dbusername -p$password
