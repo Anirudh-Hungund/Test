@@ -28,7 +28,7 @@
      # "type": "string",
       # "description": "Uri of the existing data disk VHD in ARM standard or premium storage"
       #}
-    },
+    #},
     "vmSize": {
       "type": "string",
       "metadata": {
