@@ -104,6 +104,7 @@
               "subnet": {
                 "id": "[variables('subnetRef')]"
               }
+              
             }
           }
         ]
@@ -134,6 +135,12 @@
             },
             "createOption": "Attach"
           },
+            "imageReference": {
+                "publisher": "cloudera",
+                "offer": "cloudera-centos-os",
+                "sku": "7_2",
+                "version": "latest"
+            },
         },
         "networkProfile": {
           "networkInterfaces": [
