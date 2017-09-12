@@ -24,11 +24,6 @@
         "description": "Uri of the existing OS VHD in ARM standard or premium storage"
       }
     },
-    #"dataDisk0VhdUri": {
-     # "type": "string",
-      # "description": "Uri of the existing data disk VHD in ARM standard or premium storage"
-      #}
-    #},
     "vmSize": {
       "type": "string",
       "metadata": {
@@ -139,17 +134,6 @@
             },
             "createOption": "Attach"
           },
-          #"dataDisks": [
-            #{
-              #"name": "[concat(parameters('vmName'),'-dataDisk0')]",
-              #"lun": 0,
-              #"vhd": {
-                #"uri": "[parameters('dataDisk0VhdUri')]"
-              #},
-              "caching": "ReadOnly",
-              "createOption": "Attach"
-            #}
-          #]
         },
         "networkProfile": {
           "networkInterfaces": [
