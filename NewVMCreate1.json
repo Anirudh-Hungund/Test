@@ -120,6 +120,12 @@
             "vhd": {
               "uri": "[parameters('osDiskVhdUri')]"
             },
+				"imageReference": {
+                "publisher": "cloudera",
+                "offer": "cloudera-centos-os",
+                "sku": "7_2",
+                "version": "latest"
+			},
             "createOption": "Attach"
           },
         },
